@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>dev.metaschema</groupId>
+  <artifactId>oss-parent</artifactId>
+  <versioning>
+    <lastUpdated>20241108041337</lastUpdated>
+    <snapshot>
+      <timestamp>20241108.041337</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>5-20241108.041337-1</value>
+        <updated>20241108041337</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>5-SNAPSHOT</version>
+</metadata>

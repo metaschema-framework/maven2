@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>xmlbeans</name>
+      <prefix>oss-build.plugin</prefix>
+      <artifactId>oss-build-support</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
