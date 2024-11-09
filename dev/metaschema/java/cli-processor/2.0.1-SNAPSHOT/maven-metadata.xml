@@ -3,33 +3,33 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>cli-processor</artifactId>
   <versioning>
-    <lastUpdated>20241109190737</lastUpdated>
+    <lastUpdated>20241109193121</lastUpdated>
     <snapshot>
-      <timestamp>20241109.190737</timestamp>
-      <buildNumber>11</buildNumber>
+      <timestamp>20241109.193121</timestamp>
+      <buildNumber>12</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>2.0.1-20241109.190737-11</value>
-        <updated>20241109190737</updated>
+        <value>2.0.1-20241109.193121-12</value>
+        <updated>20241109193121</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>2.0.1-20241109.190737-11</value>
-        <updated>20241109190737</updated>
+        <value>2.0.1-20241109.193121-12</value>
+        <updated>20241109193121</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>2.0.1-20241109.190737-11</value>
-        <updated>20241109190737</updated>
+        <value>2.0.1-20241109.193121-12</value>
+        <updated>20241109193121</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>2.0.1-20241109.190737-11</value>
-        <updated>20241109190737</updated>
+        <value>2.0.1-20241109.193121-12</value>
+        <updated>20241109193121</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
