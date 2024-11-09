@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>dev.metaschema.java</groupId>
+  <artifactId>metaschema-framework</artifactId>
+  <versioning>
+    <lastUpdated>20241109210432</lastUpdated>
+    <snapshot>
+      <timestamp>20241109.210432</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.1.0-20241109.210432-1</value>
+        <updated>20241109210432</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>2.1.0-SNAPSHOT</version>
+</metadata>
