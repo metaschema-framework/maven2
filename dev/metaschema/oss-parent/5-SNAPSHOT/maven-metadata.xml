@@ -3,16 +3,16 @@
   <groupId>dev.metaschema</groupId>
   <artifactId>oss-parent</artifactId>
   <versioning>
-    <lastUpdated>20241109030350</lastUpdated>
+    <lastUpdated>20241109030645</lastUpdated>
     <snapshot>
-      <timestamp>20241109.030350</timestamp>
-      <buildNumber>8</buildNumber>
+      <timestamp>20241109.030645</timestamp>
+      <buildNumber>9</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>5-20241109.030350-8</value>
-        <updated>20241109030350</updated>
+        <value>5-20241109.030645-9</value>
+        <updated>20241109030645</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
