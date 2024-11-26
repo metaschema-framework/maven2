@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.oscal</groupId>
   <artifactId>liboscal-java</artifactId>
   <versioning>
-    <lastUpdated>20241126154447</lastUpdated>
+    <lastUpdated>20241126164040</lastUpdated>
     <snapshot>
-      <timestamp>20241126.154447</timestamp>
-      <buildNumber>3</buildNumber>
+      <timestamp>20241126.164040</timestamp>
+      <buildNumber>4</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>5.1.0-20241126.154447-3</value>
-        <updated>20241126154447</updated>
+        <value>5.1.0-20241126.164040-4</value>
+        <updated>20241126164040</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>5.1.0-20241126.154447-3</value>
-        <updated>20241126154447</updated>
+        <value>5.1.0-20241126.164040-4</value>
+        <updated>20241126164040</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>cyclonedx</classifier>
         <extension>xml</extension>
-        <value>5.1.0-20241126.154447-3</value>
-        <updated>20241126154447</updated>
+        <value>5.1.0-20241126.164040-4</value>
+        <updated>20241126164040</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>cyclonedx</classifier>
         <extension>json</extension>
-        <value>5.1.0-20241126.154447-3</value>
-        <updated>20241126154447</updated>
+        <value>5.1.0-20241126.164040-4</value>
+        <updated>20241126164040</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>5.1.0-20241126.154447-3</value>
-        <updated>20241126154447</updated>
+        <value>5.1.0-20241126.164040-4</value>
+        <updated>20241126164040</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>5.1.0-20241126.154447-3</value>
-        <updated>20241126154447</updated>
+        <value>5.1.0-20241126.164040-4</value>
+        <updated>20241126164040</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
