@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.oscal</groupId>
   <artifactId>liboscal-java</artifactId>
   <versioning>
-    <lastUpdated>20250102205052</lastUpdated>
+    <lastUpdated>20250227151353</lastUpdated>
     <snapshot>
-      <timestamp>20250102.205052</timestamp>
-      <buildNumber>10</buildNumber>
+      <timestamp>20250227.151353</timestamp>
+      <buildNumber>11</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>5.2.0-20250102.205052-10</value>
-        <updated>20250102205052</updated>
+        <value>5.2.0-20250227.151353-11</value>
+        <updated>20250227151353</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>5.2.0-20250102.205052-10</value>
-        <updated>20250102205052</updated>
+        <value>5.2.0-20250227.151353-11</value>
+        <updated>20250227151353</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>cyclonedx</classifier>
         <extension>xml</extension>
-        <value>5.2.0-20250102.205052-10</value>
-        <updated>20250102205052</updated>
+        <value>5.2.0-20250227.151353-11</value>
+        <updated>20250227151353</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>cyclonedx</classifier>
         <extension>json</extension>
-        <value>5.2.0-20250102.205052-10</value>
-        <updated>20250102205052</updated>
+        <value>5.2.0-20250227.151353-11</value>
+        <updated>20250227151353</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>5.2.0-20250102.205052-10</value>
-        <updated>20250102205052</updated>
+        <value>5.2.0-20250227.151353-11</value>
+        <updated>20250227151353</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>5.2.0-20250102.205052-10</value>
-        <updated>20250102205052</updated>
+        <value>5.2.0-20250227.151353-11</value>
+        <updated>20250227151353</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
