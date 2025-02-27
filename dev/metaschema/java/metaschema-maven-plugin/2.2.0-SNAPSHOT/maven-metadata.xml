@@ -3,33 +3,33 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-maven-plugin</artifactId>
   <versioning>
-    <lastUpdated>20250227140048</lastUpdated>
+    <lastUpdated>20250227145453</lastUpdated>
     <snapshot>
-      <timestamp>20250227.140048</timestamp>
-      <buildNumber>37</buildNumber>
+      <timestamp>20250227.145453</timestamp>
+      <buildNumber>38</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>2.2.0-20250227.140048-37</value>
-        <updated>20250227140048</updated>
+        <value>2.2.0-20250227.145453-38</value>
+        <updated>20250227145453</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>2.2.0-20250227.140048-37</value>
-        <updated>20250227140048</updated>
+        <value>2.2.0-20250227.145453-38</value>
+        <updated>20250227145453</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>2.2.0-20250227.140048-37</value>
-        <updated>20250227140048</updated>
+        <value>2.2.0-20250227.145453-38</value>
+        <updated>20250227145453</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>2.2.0-20250227.140048-37</value>
-        <updated>20250227140048</updated>
+        <value>2.2.0-20250227.145453-38</value>
+        <updated>20250227145453</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
