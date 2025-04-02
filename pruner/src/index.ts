@@ -59,7 +59,6 @@ async function readMetadata(file: string): Promise<Metadata> {
     return parser.parse(xml);
 }
 
-// Example usage:
 const directory = '../dev'; // Current directory
 const namePattern = /.*-SNAPSHOT/i; // Case-insensitive pattern for names containing "test"
 
@@ -69,14 +68,12 @@ for (const dir of matchingDirectories) {
         const version = data.metadata.version;
         const versionPrefix = version.substring(0, version.length - "-SNAPSHOT".length);
         const artifact = data.metadata.artifactId;
-        const commonPrefix =  artifact +
+        const commonPrefix = artifact +
             "-" +
             versionPrefix +
             "-";
-        const fullPrefix =  commonPrefix +
+        const fullPrefix = commonPrefix +
             data.metadata.versioning.snapshot.timestamp;
-        console.log("common prefix: "+commonPrefix);
-        console.log("full prefix: "+fullPrefix);
         const files = fs.readdirSync(dir);
 
         for (const file of files) {
