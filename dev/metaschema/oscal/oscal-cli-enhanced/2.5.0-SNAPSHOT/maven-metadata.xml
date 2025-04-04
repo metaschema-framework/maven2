@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.oscal</groupId>
   <artifactId>oscal-cli-enhanced</artifactId>
   <versioning>
-    <lastUpdated>20250402021502</lastUpdated>
+    <lastUpdated>20250404035136</lastUpdated>
     <snapshot>
-      <timestamp>20250402.021502</timestamp>
-      <buildNumber>16</buildNumber>
+      <timestamp>20250404.035136</timestamp>
+      <buildNumber>17</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>2.5.0-20250402.021502-16</value>
-        <updated>20250402021502</updated>
+        <value>2.5.0-20250404.035136-17</value>
+        <updated>20250404035136</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>2.5.0-20250402.021502-16</value>
-        <updated>20250402021502</updated>
+        <value>2.5.0-20250404.035136-17</value>
+        <updated>20250404035136</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>oscal-cli</classifier>
         <extension>zip</extension>
-        <value>2.5.0-20250402.021502-16</value>
-        <updated>20250402021502</updated>
+        <value>2.5.0-20250404.035136-17</value>
+        <updated>20250404035136</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>oscal-cli</classifier>
         <extension>tar.bz2</extension>
-        <value>2.5.0-20250402.021502-16</value>
-        <updated>20250402021502</updated>
+        <value>2.5.0-20250404.035136-17</value>
+        <updated>20250404035136</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>2.5.0-20250402.021502-16</value>
-        <updated>20250402021502</updated>
+        <value>2.5.0-20250404.035136-17</value>
+        <updated>20250404035136</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>2.5.0-20250402.021502-16</value>
-        <updated>20250402021502</updated>
+        <value>2.5.0-20250404.035136-17</value>
+        <updated>20250404035136</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
