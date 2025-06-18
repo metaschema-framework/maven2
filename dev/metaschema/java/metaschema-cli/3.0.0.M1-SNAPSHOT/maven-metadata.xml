@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-cli</artifactId>
   <versioning>
-    <lastUpdated>20250617021842</lastUpdated>
+    <lastUpdated>20250618012429</lastUpdated>
     <snapshot>
-      <timestamp>20250617.021842</timestamp>
-      <buildNumber>5</buildNumber>
+      <timestamp>20250618.012429</timestamp>
+      <buildNumber>6</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0.M1-20250617.021842-5</value>
-        <updated>20250617021842</updated>
+        <value>3.0.0.M1-20250618.012429-6</value>
+        <updated>20250618012429</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0.M1-20250617.021842-5</value>
-        <updated>20250617021842</updated>
+        <value>3.0.0.M1-20250618.012429-6</value>
+        <updated>20250618012429</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0.M1-20250617.021842-5</value>
-        <updated>20250617021842</updated>
+        <value>3.0.0.M1-20250618.012429-6</value>
+        <updated>20250618012429</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>3.0.0.M1-20250617.021842-5</value>
-        <updated>20250617021842</updated>
+        <value>3.0.0.M1-20250618.012429-6</value>
+        <updated>20250618012429</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>metaschema-cli</classifier>
         <extension>zip</extension>
-        <value>3.0.0.M1-20250617.021842-5</value>
-        <updated>20250617021842</updated>
+        <value>3.0.0.M1-20250618.012429-6</value>
+        <updated>20250618012429</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>metaschema-cli</classifier>
         <extension>tar.bz2</extension>
-        <value>3.0.0.M1-20250617.021842-5</value>
-        <updated>20250617021842</updated>
+        <value>3.0.0.M1-20250618.012429-6</value>
+        <updated>20250618012429</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
