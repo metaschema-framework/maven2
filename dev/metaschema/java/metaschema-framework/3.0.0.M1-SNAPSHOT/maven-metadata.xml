@@ -3,16 +3,16 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-framework</artifactId>
   <versioning>
-    <lastUpdated>20251204145043</lastUpdated>
+    <lastUpdated>20251204224607</lastUpdated>
     <snapshot>
-      <timestamp>20251204.145043</timestamp>
-      <buildNumber>9</buildNumber>
+      <timestamp>20251204.224607</timestamp>
+      <buildNumber>10</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0.M1-20251204.145043-9</value>
-        <updated>20251204145043</updated>
+        <value>3.0.0.M1-20251204.224607-10</value>
+        <updated>20251204224607</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
