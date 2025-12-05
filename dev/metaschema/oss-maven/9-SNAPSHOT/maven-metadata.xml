@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>dev.metaschema</groupId>
+  <artifactId>oss-maven</artifactId>
+  <versioning>
+    <lastUpdated>20251205214658</lastUpdated>
+    <snapshot>
+      <timestamp>20251205.214658</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>9-20251205.214658-1</value>
+        <updated>20251205214658</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>9-SNAPSHOT</version>
+</metadata>
