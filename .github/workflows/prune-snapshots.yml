@@ -1,0 +1,112 @@
+name: Prune Snapshot Artifacts
+
+on:
+  # Run daily at 2:00 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+
+  # Allow manual trigger with options
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Perform a dry run (no actual deletions)'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: pruner/package-lock.json
+
+      - name: Install dependencies
+        working-directory: pruner
+        run: npm ci || npm install
+
+      - name: Build pruner
+        working-directory: pruner
+        run: npm run build
+
+      - name: Run pruner
+        working-directory: pruner
+        env:
+          PRUNER_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          PRUNER_SUMMARY_FILE: ${{ github.workspace }}/pruner-summary.json
+        run: npm run prune
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [[ -n $(git status --porcelain dev/) ]]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in dev/ directory"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          fi
+
+      - name: Configure Git
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git add dev/
+          git commit -m "[CI SKIP] Prune old snapshot artifacts"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Pruning Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Mode
+          if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then
+            echo "**Mode:** Dry Run (no actual deletions)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**Mode:** Live Run" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Parse and display metrics from pruner summary
+          if [[ -f "${{ github.workspace }}/pruner-summary.json" ]]; then
+            echo "### Retention Policy" >> $GITHUB_STEP_SUMMARY
+            echo "| Setting | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|---------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Retention Days | $(jq -r '.retention.days' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Minimum Builds | $(jq -r '.retention.minBuilds' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            echo "### Pruning Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Directories Processed | $(jq -r '.metrics.directoriesProcessed' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Directories with Deletions | $(jq -r '.metrics.directoriesWithDeletions' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Builds Kept | $(jq -r '.metrics.buildsKept' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Builds Deleted | $(jq -r '.metrics.buildsDeleted' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Files Deleted | $(jq -r '.metrics.filesDeleted' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "**Changes Committed:** ${{ steps.changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Configuration is defined in \`pruner/config.yml\`" >> $GITHUB_STEP_SUMMARY
