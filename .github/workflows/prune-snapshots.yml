@@ -47,6 +47,7 @@ jobs:
         working-directory: pruner
         env:
           PRUNER_DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          PRUNER_SUMMARY_FILE: ${{ github.workspace }}/pruner-summary.json
         run: npm run prune
 
       - name: Check for changes
@@ -77,11 +78,35 @@ jobs:
         run: |
           echo "## Pruning Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Mode
           if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then
             echo "**Mode:** Dry Run (no actual deletions)" >> $GITHUB_STEP_SUMMARY
           else
             echo "**Mode:** Live Run" >> $GITHUB_STEP_SUMMARY
           fi
-          echo "**Changes Detected:** ${{ steps.changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Parse and display metrics from pruner summary
+          if [[ -f "${{ github.workspace }}/pruner-summary.json" ]]; then
+            echo "### Retention Policy" >> $GITHUB_STEP_SUMMARY
+            echo "| Setting | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|---------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Retention Days | $(jq -r '.retention.days' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Minimum Builds | $(jq -r '.retention.minBuilds' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            echo "### Pruning Metrics" >> $GITHUB_STEP_SUMMARY
+            echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Directories Processed | $(jq -r '.metrics.directoriesProcessed' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Directories with Deletions | $(jq -r '.metrics.directoriesWithDeletions' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Builds Kept | $(jq -r '.metrics.buildsKept' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Builds Deleted | $(jq -r '.metrics.buildsDeleted' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "| Files Deleted | $(jq -r '.metrics.filesDeleted' ${{ github.workspace }}/pruner-summary.json) |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "**Changes Committed:** ${{ steps.changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Configuration is defined in \`pruner/config.yml\`" >> $GITHUB_STEP_SUMMARY

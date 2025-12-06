@@ -176,6 +176,9 @@ function findDirectories(baseDir: string, pattern: RegExp): string[] {
 function parseTimestamp(timestamp: string): Date {
     // Format: YYYYMMDD.HHMMSS (e.g., 20251205.193728)
     const [datePart, timePart] = timestamp.split('.');
+    if (!datePart || !timePart || datePart.length !== 8 || timePart.length !== 6) {
+        throw new Error(`Invalid timestamp format: ${timestamp}`);
+    }
     const year = parseInt(datePart.substring(0, 4));
     const month = parseInt(datePart.substring(4, 6)) - 1; // JS months are 0-indexed
     const day = parseInt(datePart.substring(6, 8));
@@ -573,17 +576,44 @@ async function main(): Promise<void> {
         }
     }
 
+    // Calculate additional metrics
+    const totalBuildsKept = results.reduce((sum, r) => sum + r.buildsKept, 0);
+    const directoriesWithDeletions = results.filter(r => r.buildsDeleted > 0).length;
+
     console.log('');
     console.log('='.repeat(50));
     console.log('Summary');
     console.log('='.repeat(50));
     console.log(`Directories processed: ${results.length}`);
+    console.log(`Directories with deletions: ${directoriesWithDeletions}`);
+    console.log(`Total builds kept: ${totalBuildsKept}`);
     console.log(`Total builds deleted: ${totalBuildsDeleted}`);
     console.log(`Total files deleted: ${totalFilesDeleted}`);
 
     if (dryRun) {
         console.log('');
         console.log('*** This was a DRY RUN. No files were actually deleted. ***');
+    }
+
+    // Write JSON summary for CI consumption
+    const summaryFile = process.env.PRUNER_SUMMARY_FILE;
+    if (summaryFile) {
+        const summary = {
+            dryRun,
+            retention: {
+                days: config.retention.days,
+                minBuilds: config.retention.minBuilds
+            },
+            metrics: {
+                directoriesProcessed: results.length,
+                directoriesWithDeletions,
+                buildsKept: totalBuildsKept,
+                buildsDeleted: totalBuildsDeleted,
+                filesDeleted: totalFilesDeleted
+            }
+        };
+        fs.writeFileSync(summaryFile, JSON.stringify(summary, null, 2));
+        logger.info(`Summary written to ${summaryFile}`);
     }
 }
 
