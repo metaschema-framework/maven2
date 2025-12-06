@@ -1,0 +1,19 @@
+# Maven Snapshot Pruner Configuration
+# This file controls how old SNAPSHOT builds are pruned from the repository.
+
+# Base directory containing Maven artifacts (relative to pruner directory)
+baseDir: "../dev"
+
+# Retention policy settings
+retention:
+  # Keep all builds from the last N days
+  days: 30
+  # Always keep at least this many builds per snapshot version
+  # (ensures the latest build is never deleted, even if older than retention.days)
+  minBuilds: 1
+
+# Logging level: DEBUG, INFO, WARN, ERROR
+logLevel: INFO
+
+# Pattern for snapshot directories (case-insensitive regex)
+snapshotPattern: ".*-SNAPSHOT"

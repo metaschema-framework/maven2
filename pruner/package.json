@@ -1,21 +1,25 @@
 {
   "name": "pruner",
-  "version": "1.0.0",
-  "description": "Prunes a maven repo to remove old SNAPSHOT versions.",
+  "version": "2.0.0",
+  "description": "Prunes a maven repo to remove old SNAPSHOT versions based on configurable retention policy.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "npx ts-node src/index.ts",
+    "prune": "node dist/index.js",
+    "prune:dry": "PRUNER_DRY_RUN=true node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.13.17",
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "fast-xml-parser": "^5.0.9"
+    "fast-xml-parser": "^5.0.9",
+    "js-yaml": "^4.1.0"
   }
 }
