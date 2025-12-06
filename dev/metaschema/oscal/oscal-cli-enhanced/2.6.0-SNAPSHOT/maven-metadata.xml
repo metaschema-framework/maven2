@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.oscal</groupId>
   <artifactId>oscal-cli-enhanced</artifactId>
   <versioning>
-    <lastUpdated>20251206073117</lastUpdated>
+    <lastUpdated>20251206080448</lastUpdated>
     <snapshot>
-      <timestamp>20251206.073117</timestamp>
-      <buildNumber>6</buildNumber>
+      <timestamp>20251206.080448</timestamp>
+      <buildNumber>7</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>2.6.0-20251206.073117-6</value>
-        <updated>20251206073117</updated>
+        <value>2.6.0-20251206.080448-7</value>
+        <updated>20251206080448</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>2.6.0-20251206.073117-6</value>
-        <updated>20251206073117</updated>
+        <value>2.6.0-20251206.080448-7</value>
+        <updated>20251206080448</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>oscal-cli</classifier>
         <extension>zip</extension>
-        <value>2.6.0-20251206.073117-6</value>
-        <updated>20251206073117</updated>
+        <value>2.6.0-20251206.080448-7</value>
+        <updated>20251206080448</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>oscal-cli</classifier>
         <extension>tar.bz2</extension>
-        <value>2.6.0-20251206.073117-6</value>
-        <updated>20251206073117</updated>
+        <value>2.6.0-20251206.080448-7</value>
+        <updated>20251206080448</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>2.6.0-20251206.073117-6</value>
-        <updated>20251206073117</updated>
+        <value>2.6.0-20251206.080448-7</value>
+        <updated>20251206080448</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>2.6.0-20251206.073117-6</value>
-        <updated>20251206073117</updated>
+        <value>2.6.0-20251206.080448-7</value>
+        <updated>20251206080448</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
