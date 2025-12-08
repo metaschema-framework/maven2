@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-cli</artifactId>
   <versioning>
-    <lastUpdated>20251207180238</lastUpdated>
+    <lastUpdated>20251208183221</lastUpdated>
     <snapshot>
-      <timestamp>20251207.180238</timestamp>
-      <buildNumber>19</buildNumber>
+      <timestamp>20251208.183221</timestamp>
+      <buildNumber>20</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0.M1-20251207.180238-19</value>
-        <updated>20251207180238</updated>
+        <value>3.0.0.M1-20251208.183221-20</value>
+        <updated>20251208183221</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0.M1-20251207.180238-19</value>
-        <updated>20251207180238</updated>
+        <value>3.0.0.M1-20251208.183221-20</value>
+        <updated>20251208183221</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0.M1-20251207.180238-19</value>
-        <updated>20251207180238</updated>
+        <value>3.0.0.M1-20251208.183221-20</value>
+        <updated>20251208183221</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>3.0.0.M1-20251207.180238-19</value>
-        <updated>20251207180238</updated>
+        <value>3.0.0.M1-20251208.183221-20</value>
+        <updated>20251208183221</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>metaschema-cli</classifier>
         <extension>zip</extension>
-        <value>3.0.0.M1-20251207.180238-19</value>
-        <updated>20251207180238</updated>
+        <value>3.0.0.M1-20251208.183221-20</value>
+        <updated>20251208183221</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>metaschema-cli</classifier>
         <extension>tar.bz2</extension>
-        <value>3.0.0.M1-20251207.180238-19</value>
-        <updated>20251207180238</updated>
+        <value>3.0.0.M1-20251208.183221-20</value>
+        <updated>20251208183221</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
