@@ -3,21 +3,21 @@
   <groupId>dev.metaschema</groupId>
   <artifactId>oss-build-support</artifactId>
   <versioning>
-    <lastUpdated>20251206075428</lastUpdated>
+    <lastUpdated>20251213205047</lastUpdated>
     <snapshot>
-      <timestamp>20251206.075428</timestamp>
-      <buildNumber>4</buildNumber>
+      <timestamp>20251213.205047</timestamp>
+      <buildNumber>5</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>9-20251206.075428-4</value>
-        <updated>20251206075428</updated>
+        <value>9-20251213.205047-5</value>
+        <updated>20251213205047</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>9-20251206.075428-4</value>
-        <updated>20251206075428</updated>
+        <value>9-20251213.205047-5</value>
+        <updated>20251213205047</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
