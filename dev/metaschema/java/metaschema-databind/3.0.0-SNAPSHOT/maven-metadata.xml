@@ -3,33 +3,33 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-databind</artifactId>
   <versioning>
-    <lastUpdated>20251228185639</lastUpdated>
+    <lastUpdated>20251228223818</lastUpdated>
     <snapshot>
-      <timestamp>20251228.185639</timestamp>
-      <buildNumber>22</buildNumber>
+      <timestamp>20251228.223818</timestamp>
+      <buildNumber>23</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20251228.185639-22</value>
-        <updated>20251228185639</updated>
+        <value>3.0.0-20251228.223818-23</value>
+        <updated>20251228223818</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0-20251228.185639-22</value>
-        <updated>20251228185639</updated>
+        <value>3.0.0-20251228.223818-23</value>
+        <updated>20251228223818</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20251228.185639-22</value>
-        <updated>20251228185639</updated>
+        <value>3.0.0-20251228.223818-23</value>
+        <updated>20251228223818</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20251228.185639-22</value>
-        <updated>20251228185639</updated>
+        <value>3.0.0-20251228.223818-23</value>
+        <updated>20251228223818</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
