@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-cli</artifactId>
   <versioning>
-    <lastUpdated>20251231211810</lastUpdated>
+    <lastUpdated>20251231223438</lastUpdated>
     <snapshot>
-      <timestamp>20251231.211810</timestamp>
-      <buildNumber>31</buildNumber>
+      <timestamp>20251231.223438</timestamp>
+      <buildNumber>32</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20251231.211810-31</value>
-        <updated>20251231211810</updated>
+        <value>3.0.0-20251231.223438-32</value>
+        <updated>20251231223438</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0-20251231.211810-31</value>
-        <updated>20251231211810</updated>
+        <value>3.0.0-20251231.223438-32</value>
+        <updated>20251231223438</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20251231.211810-31</value>
-        <updated>20251231211810</updated>
+        <value>3.0.0-20251231.223438-32</value>
+        <updated>20251231223438</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20251231.211810-31</value>
-        <updated>20251231211810</updated>
+        <value>3.0.0-20251231.223438-32</value>
+        <updated>20251231223438</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>metaschema-cli</classifier>
         <extension>zip</extension>
-        <value>3.0.0-20251231.211810-31</value>
-        <updated>20251231211810</updated>
+        <value>3.0.0-20251231.223438-32</value>
+        <updated>20251231223438</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>metaschema-cli</classifier>
         <extension>tar.bz2</extension>
-        <value>3.0.0-20251231.211810-31</value>
-        <updated>20251231211810</updated>
+        <value>3.0.0-20251231.223438-32</value>
+        <updated>20251231223438</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
