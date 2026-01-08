@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.oscal</groupId>
   <artifactId>oscal-cli-enhanced</artifactId>
   <versioning>
-    <lastUpdated>20260108052337</lastUpdated>
+    <lastUpdated>20260108060119</lastUpdated>
     <snapshot>
-      <timestamp>20260108.052337</timestamp>
-      <buildNumber>5</buildNumber>
+      <timestamp>20260108.060119</timestamp>
+      <buildNumber>6</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20260108.052337-5</value>
-        <updated>20260108052337</updated>
+        <value>3.0.0-20260108.060119-6</value>
+        <updated>20260108060119</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0-20260108.052337-5</value>
-        <updated>20260108052337</updated>
+        <value>3.0.0-20260108.060119-6</value>
+        <updated>20260108060119</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>oscal-cli</classifier>
         <extension>zip</extension>
-        <value>3.0.0-20260108.052337-5</value>
-        <updated>20260108052337</updated>
+        <value>3.0.0-20260108.060119-6</value>
+        <updated>20260108060119</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>oscal-cli</classifier>
         <extension>tar.bz2</extension>
-        <value>3.0.0-20260108.052337-5</value>
-        <updated>20260108052337</updated>
+        <value>3.0.0-20260108.060119-6</value>
+        <updated>20260108060119</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20260108.052337-5</value>
-        <updated>20260108052337</updated>
+        <value>3.0.0-20260108.060119-6</value>
+        <updated>20260108060119</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20260108.052337-5</value>
-        <updated>20260108052337</updated>
+        <value>3.0.0-20260108.060119-6</value>
+        <updated>20260108060119</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
