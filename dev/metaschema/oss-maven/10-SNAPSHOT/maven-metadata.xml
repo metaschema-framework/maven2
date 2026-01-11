@@ -3,16 +3,16 @@
   <groupId>dev.metaschema</groupId>
   <artifactId>oss-maven</artifactId>
   <versioning>
-    <lastUpdated>20251214122832</lastUpdated>
+    <lastUpdated>20260111162618</lastUpdated>
     <snapshot>
-      <timestamp>20251214.122832</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20260111.162618</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>10-20251214.122832-1</value>
-        <updated>20251214122832</updated>
+        <value>10-20260111.162618-2</value>
+        <updated>20260111162618</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
