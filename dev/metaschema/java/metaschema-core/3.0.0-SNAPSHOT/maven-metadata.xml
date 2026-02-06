@@ -3,33 +3,33 @@
   <groupId>dev.metaschema.java</groupId>
   <artifactId>metaschema-core</artifactId>
   <versioning>
-    <lastUpdated>20260206065048</lastUpdated>
+    <lastUpdated>20260206134518</lastUpdated>
     <snapshot>
-      <timestamp>20260206.065048</timestamp>
-      <buildNumber>48</buildNumber>
+      <timestamp>20260206.134518</timestamp>
+      <buildNumber>49</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20260206.065048-48</value>
-        <updated>20260206065048</updated>
+        <value>3.0.0-20260206.134518-49</value>
+        <updated>20260206134518</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0-20260206.065048-48</value>
-        <updated>20260206065048</updated>
+        <value>3.0.0-20260206.134518-49</value>
+        <updated>20260206134518</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20260206.065048-48</value>
-        <updated>20260206065048</updated>
+        <value>3.0.0-20260206.134518-49</value>
+        <updated>20260206134518</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20260206.065048-48</value>
-        <updated>20260206065048</updated>
+        <value>3.0.0-20260206.134518-49</value>
+        <updated>20260206134518</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
