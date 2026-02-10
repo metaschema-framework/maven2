@@ -19,7 +19,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "fast-xml-parser": "^5.0.9",
+    "fast-xml-parser": "^5.3.4",
     "js-yaml": "^4.1.0"
   }
 }
