@@ -3,45 +3,45 @@
   <groupId>dev.metaschema.oscal</groupId>
   <artifactId>liboscal-java</artifactId>
   <versioning>
-    <lastUpdated>20260423062424</lastUpdated>
+    <lastUpdated>20260508124308</lastUpdated>
     <snapshot>
-      <timestamp>20260423.062424</timestamp>
-      <buildNumber>8</buildNumber>
+      <timestamp>20260508.124308</timestamp>
+      <buildNumber>9</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>7.2.0-20260423.062424-8</value>
-        <updated>20260423062424</updated>
+        <value>7.2.0-20260508.124308-9</value>
+        <updated>20260508124308</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>7.2.0-20260423.062424-8</value>
-        <updated>20260423062424</updated>
+        <value>7.2.0-20260508.124308-9</value>
+        <updated>20260508124308</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>cyclonedx</classifier>
         <extension>xml</extension>
-        <value>7.2.0-20260423.062424-8</value>
-        <updated>20260423062424</updated>
+        <value>7.2.0-20260508.124308-9</value>
+        <updated>20260508124308</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>cyclonedx</classifier>
         <extension>json</extension>
-        <value>7.2.0-20260423.062424-8</value>
-        <updated>20260423062424</updated>
+        <value>7.2.0-20260508.124308-9</value>
+        <updated>20260508124308</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>7.2.0-20260423.062424-8</value>
-        <updated>20260423062424</updated>
+        <value>7.2.0-20260508.124308-9</value>
+        <updated>20260508124308</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>7.2.0-20260423.062424-8</value>
-        <updated>20260423062424</updated>
+        <value>7.2.0-20260508.124308-9</value>
+        <updated>20260508124308</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
